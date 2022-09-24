@@ -1,6 +1,7 @@
 package com.tjktak1002.craftgunpowder;
 
 import com.mojang.logging.LogUtils;
+import com.tjktak1002.craftgunpowder.block.ModBlocks;
 import com.tjktak1002.craftgunpowder.item.ModItem;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.common.MinecraftForge;
@@ -26,6 +27,7 @@ public class CraftGunpowder
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItem.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
