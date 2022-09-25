@@ -1,4 +1,4 @@
-package com.tjktak1002.craftgunpowder;
+package com.tjktak1002.gunpowderrecipe;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
@@ -12,15 +12,15 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(CraftGunpowder.MODID)
-public class CraftGunpowder
+@Mod(GunpowderRecipe.MODID)
+public class GunpowderRecipe
 {
     // Define mod id in a common place for everything to reference
-    public static final String MODID = "craftgunpowder";
+    public static final String MODID = "gunpowderrecipe";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public CraftGunpowder()
+    public GunpowderRecipe()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
